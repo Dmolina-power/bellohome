@@ -1,5 +1,5 @@
 .home nav {
-    background: #0224fe;
+    background: #1bd92e;
     width: 100%;
     padding: 20px 40px;
     display: flex;
@@ -8,13 +8,13 @@
   }
   
   .home nav h2 {
-    color: #fff;
+    color: rgb(251, 251, 251);
   }
   
   .home nav button {
-    width: 86px;
-    padding: 8px 0;
-    background: #2e0089;
+    width: 65px;
+    padding: 5px 0;
+    background: #0d8143;
   }
   
   .logo{
