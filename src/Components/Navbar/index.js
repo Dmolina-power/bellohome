@@ -10,7 +10,7 @@ const Navbar = ({ handleLogout }) => {
     <section className="home">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/home">
-          Artscape
+          Bello home & Landscaping
         </a>
         <button
           class="navbar-toggler"
@@ -62,15 +62,15 @@ const Navbar = ({ handleLogout }) => {
             </button>
           </form>
           <UserInfo />
-        </div>
 
         <button className="exit"
           onClick={() => {
-            auth.signOut();
-          }}
-        >
+              auth.signOut();
+            }}
+            >
           Sign out
         </button>
+            </div>
       </nav>
     </section>
   );
