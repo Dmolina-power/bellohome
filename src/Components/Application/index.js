@@ -5,9 +5,10 @@ import Signup from "../Signup/index";
 import PasswordReset from "../PasswordReset/index";
 import { UserContext } from "../../Providers/UserProvider";
 import Navbar from "../Navbar"
-import Landing from "../Landing"
+
 //Pages
 import Home from "../../Pages/Home";
+import Schedule from "../../Pages/Schedule";
 
 function Application() {
     const user = useContext(UserContext);
@@ -16,14 +17,15 @@ function Application() {
       <Navbar />
       
       <Router>
-      <Home path="/home" />
-      
+      <Home path="/" />
+      <Schedule path="/schedule" />
       </Router>
       </>
       : 
       <Router>
         <Signup path="signup" />
-        <Landing path="/" />
+        <SignIn path="/" />
+        
         <PasswordReset path = "passwordReset" />
       </Router>
     );

@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { Link } from "@reach/router";
 import { signInWithGoogle } from "../../fire";
 import { auth } from "../../fire";
+import Landing from "../../Components/Landing"
+
 import "./style.css"
 
 const SignIn = () => {
@@ -31,9 +33,14 @@ const SignIn = () => {
    
 
   return (
-  
+    <>
+  <div class="jumbotron jumbotron-fluid text-white text-center">
+  <div class="container">
+    <h1 class="display-4">Bello home & Landscaping</h1>
+    <p class="lead">Schedule your cut Today!</p>
+    
     <section className="login">
-      { <div className="border border-blue-400 mx-auto w-11/12 md:w-2/4 rounded py-8 px-4 md:px-8">
+      { <div className="border border-blue-400 mx-auto w-11/12 md:w-2/4 rounded py-8  md:px-8">
         {error !== null && <div className = "py-4 bg-red-600 w-full text-white text-center mb-3">{error}</div>} 
         <div className="loginContainer">
       <h1 className="signin">Sign In</h1>
@@ -84,6 +91,9 @@ const SignIn = () => {
         </div>
    }
     </section>
+  </div>
+</div>
+    </>
    )
   
 };

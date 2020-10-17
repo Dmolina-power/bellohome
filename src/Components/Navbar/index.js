@@ -8,9 +8,9 @@ const Navbar = ({ handleLogout }) => {
 
   return (
     <section className="home">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky">
         <a class="navbar-brand" href="/home">
-          Bello home & Landscaping
+          LOGO
         </a>
         <button
           class="navbar-toggler"
