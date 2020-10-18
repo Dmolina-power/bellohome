@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link } from "@reach/router";
 import { signInWithGoogle } from "../../fire";
 import { auth } from "../../fire";
-import Landing from "../../Components/Landing"
+
 
 import "./style.css"
 
@@ -34,16 +34,19 @@ const SignIn = () => {
 
   return (
     <>
-  <div class="jumbotron jumbotron-fluid text-white text-center">
-  <div class="container">
-    <h1 class="display-4">Bello home & Landscaping</h1>
-    <p class="lead">Schedule your cut Today!</p>
-    
-    <section className="login">
-      { <div className="border border-blue-400 mx-auto w-11/12 md:w-2/4 rounded py-8  md:px-8">
-        {error !== null && <div className = "py-4 bg-red-600 w-full text-white text-center mb-3">{error}</div>} 
-        <div className="loginContainer">
-      <h1 className="signin">Sign In</h1>
+  <div class="card">
+  <img src="https://images.unsplash.com/photo-1543459176-4426b37223ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="plant"/>
+  <div class="card-img-overlay">
+  <h1 class="display-4 text-white">Bello home & Landscaping</h1>
+  <p class="lead text-white text-center">Schedule your cut Today!</p>
+  </div>
+  <div class="card-body">
+    <h1 class="card-title text-center">Sign In</h1>
+    <button class="btn facebook-btn social-btn btn-block" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+          <button class="btn google-btn social-btn btn-block" type="button"onClick={() => {
+              signInWithGoogle();
+            }}><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+          <p className="or">or</p>
           <label htmlFor="userEmail" className="block">
             Email:
           </label>
@@ -51,7 +54,7 @@ const SignIn = () => {
             type="email"
             name="userEmail"
             value = {email}
-            placeholder="E.g: faruq123@gmail.com"
+            placeholder=" Your Email"
             id="userEmail"
             onChange = {(event) => onChangeHandler(event)}
           />
@@ -66,33 +69,26 @@ const SignIn = () => {
             id="userPassword"
             onChange = {(event) => onChangeHandler(event)}
           />
-          <button  onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}>
-            Sign in
-          </button>
-        <p className="or">or</p>
-        <button className="googlebutton"
-          onClick={() => {
-            signInWithGoogle();
-          }}
-        >
-          Sign in with Google
-        </button>
+          <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}></i> Sign in</button>
         <p className="or">
           Don't have an account?{" "}
-          <Link to="signup">
+          <Link className="or" to="signup">
             Sign up here
           </Link>{" "}
           <br />{" "}
-          <Link to="passwordReset" >
+          <Link className="or" to="passwordReset" >
             Forgot Password?
           </Link>
         </p>
-      </div>
-        </div>
-   }
-    </section>
+
   </div>
 </div>
+    
+    
+          
+      
+          
+  
     </>
    )
   
