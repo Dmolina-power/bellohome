@@ -9,6 +9,8 @@ import Navbar from "../Navbar"
 //Pages
 import Home from "../../Pages/Home";
 import Schedule from "../../Pages/Schedule";
+import Why from "../../Pages/Why";
+import Team from "../../Pages/Team";
 
 function Application() {
     const user = useContext(UserContext);
@@ -19,6 +21,8 @@ function Application() {
       <Router>
       <Home path="/" />
       <Schedule path="/schedule" />
+      <Why path="/why" />
+      <Team path="/team" />
       </Router>
       </>
       : 
