@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
+    
   }
 
   .signin{
@@ -46,3 +47,6 @@
      color: black;
    }
 
+.card-body{
+  background-color: rgb(19, 66, 41);
+}

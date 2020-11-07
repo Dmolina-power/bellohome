@@ -42,8 +42,8 @@ const SignIn = () => {
   </div>
   <div class="card-body">
     <h1 class="card-title text-center">Sign In</h1>
-    <button class="btn facebook-btn social-btn btn-block" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
-          <button class="btn google-btn social-btn btn-block" type="button"onClick={() => {
+    <button class="btn facebook-btn social-btn btn-block text-white" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+          <button class="btn google-btn social-btn btn-block text-white" type="button"onClick={() => {
               signInWithGoogle();
             }}><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
           <p className="or">or</p>
