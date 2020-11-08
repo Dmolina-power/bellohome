@@ -1,0 +1,54 @@
+body {
+  display: flex!important;
+  min-height: 100vh!important;
+  flex-direction: column!important;
+}
+
+#main {
+  flex: 1 0 auto!important;
+}
+
+  footer {
+    background-color: rgb(9, 44, 32)!important;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+  }
+
+  .fab.fa-cc-apple-pay:before{
+    font-size: 30px!important;
+    padding-right: 5px;
+  }
+  
+  .fab.fa-cc-paypal:before{
+    font-size: 30px!important;
+    padding-right: 5px;
+  }
+
+  .fab.fa-google-wallet:before{
+    font-size: 30px!important;
+    padding-right: 5px;
+  }
+
+  .far.fa-credit-card:before{
+    font-size: 30px!important;
+    padding-right: 5px;
+  }
+
+  .fas.fa-money-bill-alt:before{
+    font-size: 30px!important;
+    padding-right: 5px;
+  }
+
+  .fa-facebook-f:before{
+    font-size: 25px!important;
+    
+  }
+
+  .fa-twitter:before{
+    font-size: 25px!important;
+  }
+
+  .fa-instagram:before{
+    font-size: 25px!important;
+  }

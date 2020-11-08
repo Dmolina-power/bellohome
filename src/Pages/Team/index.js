@@ -3,12 +3,14 @@ import Martha from "../../images/Martha.JPG";
 import Daniel from "../../images/daniel.jpg";
 import Familia from "../../images/familia.jpg";
 import Manuel from "../../images/manuel.jpg";
+import Teamcard from "../../Components/Teamcard"
 import "./style.css";
 
 function team() {
   return (
     <>
-      <div class="jumbotron3 jumbotron-fluid text-center">
+    <Teamcard />
+      {/* <div class="jumbotron3 jumbotron-fluid text-center">
         <div class="container">
           <h1 class="display-4">Our Team</h1>
         </div>
@@ -92,7 +94,7 @@ function team() {
       </div>
     </div>
   </div>
-</div>
+</div> */}
     </>
   );
 }

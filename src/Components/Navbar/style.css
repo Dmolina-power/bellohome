@@ -1,39 +1,8 @@
-.home nav {
-    background: #1bd92e;
-    width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .home nav h2 {
-    color: rgb(251, 251, 251);
-  }
-  
-  .home nav button {
-    width: 65px;
-    padding: 5px 0;
-    background: #0d8143;
-  }
-  
-  .logo{
-    text-align: center;
-    color: white;
-    font-size: xx-large;
-  }
-  
-  .logoQuote{
-    text-align: center;
-    color: white;
-  }
+nav{
+  background-color: rgb(9, 44, 32);
+}
 
-  button.search{
-    margin-right: 25px;
-  }
+.brand-logo{
+  font-size: 21px!important;
+}
 
-  .exit{
-    margin-left: 20px;
-  }
-  
-  

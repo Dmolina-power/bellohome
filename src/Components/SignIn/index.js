@@ -58,7 +58,6 @@ const SignIn = () => {
             id="userEmail"
             onChange = {(event) => onChangeHandler(event)}
           />
-          <br></br>
           <label htmlFor="userPassword" className="block">
             Password:
           </label>
@@ -70,7 +69,7 @@ const SignIn = () => {
             id="userPassword"
             onChange = {(event) => onChangeHandler(event)}
           />
-          <button class="btn outline-success btn-block" type="submit"><i class="fas fa-sign-in-alt"onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}></i> Sign in</button>
+          <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}></i> Sign in</button>
         <p className="or">
           Don't have an account?{" "}
           <Link className="or" to="signup">

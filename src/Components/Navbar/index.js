@@ -1,78 +1,80 @@
-import React from "react";
+import React, { Component } from "react";
 import { auth } from "../../fire";
+import { Navbar, NavItem } from "react-materialize";
 import UserInfo from "../UserInfo/index";
-import logo from "../../images/theme2.jpg";
+import M from "materialize-css";
+
 import "./style.css";
 
-
-const Navbar = ({ handleLogout }) => {
-  
-
-  return (
-    <section className="home">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky">
-        <a class="navbar-brand" href="/home">
-        <img src={logo} width="160" height="60" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+export default class header extends Component {
+  componentDidUpdate() {
+    document.querySelectorAll(".sidenav");
+    M.AutoInit();
+  }
+  render() {
+    return (
+      <>
+        <Navbar
+          lignLinks="left"
+          brand={
+            <a className="brand-logo right" href="/">
+              Bello Home & Landscaping
+            </a>
+          }
+          id="mobile-nav"
+          material-icons={<i>menu</i>}
+          options={{
+            draggable: true,
+            edge: "left",
+            inDuration: 250,
+            onCloseEnd: null,
+            onCloseStart: null,
+            onOpenEnd: null,
+            onOpenStart: null,
+            outDuration: 200,
+            preventScrolling: true,
+          }}
+          sidenav={
+            <ul>
+              <li>
+                <a href="/services">Services</a>
+              </li>
+              ,
+              <li>
+                <a href="/promotions">Promotions</a>
+              </li>
+              ,
+              <li>
+                <a href="/why">Why Choose Us</a>
+              </li>
+              ,
+              <li>
+                <a href="/team">Our Team</a>
+              </li>
+              ,
+              <li>
+                <a href="/contact">Contact Us</a>
+              </li>
+              
+              <UserInfo />
+              <button
+                className="exit"
+                onClick={() => {
+                  auth.signOut();
+                }}
+              >
+                Sign out
+              </button>
+            </ul>
+          }
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/services">
-                Services<span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/payment">
-                Payment Options
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/promotions">
-                Promotions
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/why">
-               Why Choose Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/team">
-               Our Team
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">
-               Contact Us
-              </a>
-            </li>
-          </ul>
-          
-          <UserInfo />
-
-        <button className="exit"
-          onClick={() => {
-              auth.signOut();
-            }}
-            >
-          Sign out
-        </button>
-            </div>
-      </nav>
-    </section>
-  );
-};
-
-export default Navbar;
+          <NavItem href="/services">Services</NavItem>
+          <NavItem href="/contact">Contact Us</NavItem>
+          <NavItem href="/team">Our Team</NavItem>
+          <NavItem href="/promotions">Promotions</NavItem>
+          <NavItem href="/signIn">Sign In</NavItem>
+        </Navbar>
+      </>
+    );
+  }
+}
