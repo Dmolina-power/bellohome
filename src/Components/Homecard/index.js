@@ -28,7 +28,7 @@ export default class Homecard extends Component {
       <div id="test6"><p>Credit/Debit,Paypal,Applepay and Google Wallet will also be available at no additional charge.Furthermore, our professional Team, wil do a quality job with affordables prices, and many discounts/promotions, that will tell you how much we value our customers.</p>
       </div>
     </div>
-        <div class="card-action">
+        <div class="card-action center">
           <a href="/schedule">SCHEDULE NOW</a>
         </div>
       </div>
