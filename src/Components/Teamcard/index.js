@@ -2,6 +2,7 @@ import React from "react";
 import Martha from "../../images/Martha.JPG";
 import Familia from "../../images/familia.jpg";
 import Daniel from "../../images/daniel.jpg";
+import Manuel from "../../images/manuel.jpg";
 import "./style.css";
 
 const Teamcard = () => {
@@ -34,38 +35,25 @@ const Teamcard = () => {
 </div>
 <div class="card medium">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src={Martha}/>
+      <img class="activator2" src={Martha}/>
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Martha<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Customer Service<i class="material-icons right">close</i></span>
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
     </div>
   </div>
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg"/>
+      <img class="activator" src={Manuel}/>
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Manuel<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg"/>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Manager of Operations<i class="material-icons right">close</i></span>
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
     </div>
   </div>

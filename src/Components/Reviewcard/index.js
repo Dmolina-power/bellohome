@@ -12,7 +12,11 @@ const Reviewcard = () => {
           <p>I am a very simple card. I am good at containing small bits of information.</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+        <i class="material-icons">star_border</i>
+        <i class="material-icons">star_border</i>
+        <i class="material-icons">star_border</i>
+        <i class="material-icons">star_border</i>
+        <i class="material-icons">star_border</i>
         </div>
       </div>
     </div>
