@@ -8,13 +8,20 @@ const UserInfo = () => {
   console.log(user);
 
   return (
-    <div class="media">
-      <img src={photoURL} class="rounded-circle user" alt="userImage" />
-      <div class="media-body">
-        <h5 class="mt-0">{displayName}</h5>
-        {email}
-      </div>
-    </div>
+    <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s4">
+              <img src={photoURL} alt="" class="circle responsive-img"/> 
+            </div>
+            <div class="col s8">
+              <span class="black-text">
+              {displayName}
+              {email}
+              </span>
+            </div>
+          </div>
+        </div>
+    
   );
 };
 

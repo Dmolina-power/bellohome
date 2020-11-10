@@ -1,19 +1,10 @@
-.media{
-    float: right;
+.circle.responsive-img{
+    height: 50px!important;
+    width: 50px!important;
+    max-width: none!important;
 }
 
-.rounded-circle.user{
-    height: 50px;
-    width: 50px;
-    margin-top: 10px;
-}
 
-.media-body{
-    margin-top: 15px;
-    margin-left: 5px;
-    font-size: small;
-}
 
-h5.mt-0{
-    font-size: small;
-}
+
+
